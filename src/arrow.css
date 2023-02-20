@@ -1,0 +1,19 @@
+.arrow {
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform: rotate(90deg);
+  cursor: pointer;
+  pointer-events: none;
+  margin-top: 50px;
+  margin-bottom: -15vh;
+  max-height: 50vh;
+}
+
+.arrow span {
+  display: block;
+  width: 1.5vw;
+  height: 1.5vw;
+  border-top: 5px solid white;
+  border-left: 5px solid white;
+  transform: rotate(45deg);
+}

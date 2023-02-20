@@ -1,0 +1,41 @@
+.animatedArrow {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform: rotate(90deg);
+  cursor: pointer;
+  max-height: 50vh;
+}
+
+.animatedArrow span {
+  display: block;
+  width: 1.5vw;
+  height: 1.5vw;
+  border-top: 5px solid white;
+  border-left: 5px solid white;
+  transform: rotate(45deg);
+  animation: animate 2s infinite;
+  animation-direction: reverse;
+}
+
+.animatedArrow span:nth-child(2) {
+  animation-delay: -0.2s;
+}
+
+.animatedArrow span:nth-child(3) {
+  animation-delay: -0.4s;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(-20px, -20px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(45deg) translate(20px, 20px);
+  }
+}
