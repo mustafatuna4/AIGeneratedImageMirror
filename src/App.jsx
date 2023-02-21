@@ -125,11 +125,19 @@ function App() {
     <div className="App">
       <header className="App-header"> AI Generated Image Mirror </header>
       <div className="App-body">
-        <div>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+
+            alignItems: "center",
+          }}
+        >
           <Image
             style={{
               border: "2px solid black",
-
+              marginTop: "3vh",
+              marginBottom: "2vh",
               width: "20rem",
               height: "20rem",
             }}
@@ -137,7 +145,7 @@ function App() {
             rounded={true}
           ></Image>
           <input
-            style={{ marginTop: "2vh", maxWidth: "50vh", color: "white" }}
+            style={{ maxWidth: "50vh", color: "white" }}
             type="file"
             name="myImage"
             onChange={(event) => {
